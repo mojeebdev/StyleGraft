@@ -1,5 +1,5 @@
 {
-  "name": "stylegraft",
+  "name": "@blindspotlab/stylegraft",
   "version": "0.1.0",
   "description": "Turn website references into original, product-specific design systems for ChatGPT and Codex.",
   "type": "module",
@@ -33,6 +33,9 @@
   ],
   "author": "Mojeeb Titilayo <https://mojeeb.xyz/>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=18"
   }
