@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">StyleGraft — Reference in. Your system out.</title>
+  <desc id="desc">StyleGraft social sharing artwork.</desc>
+  <rect width="1200" height="630" fill="#18271f"/>
+  <g transform="translate(72 72) scale(.31)">
+    <rect width="512" height="512" rx="76" fill="#f4f0e7"/>
+    <path d="M104 96h304v96H216v32h192v192H104v-96h192v-32H104z" fill="#18271f"/>
+    <path d="M104 224h304v64H104z" fill="#f36d4d"/>
+    <path d="M184 224h144v64H184z" fill="#f6e56a"/>
+  </g>
+  <text x="256" y="146" fill="#f4f0e7" font-family="DejaVu Sans, Arial, sans-serif" font-size="50" font-weight="700" letter-spacing="-2">StyleGraft</text>
+  <text x="72" y="357" fill="#f4f0e7" font-family="DejaVu Sans, Arial, sans-serif" font-size="92" font-weight="700" letter-spacing="-5">Reference in.</text>
+  <text x="72" y="462" fill="#f6e56a" font-family="Georgia, serif" font-size="100" font-style="italic">Your system out.</text>
+  <text x="76" y="552" fill="#f4f0e7" opacity=".72" font-family="DejaVu Sans Mono, monospace" font-size="19" letter-spacing="2">DESIGN SYSTEMS FROM VISUAL REFERENCES</text>
+  <path d="M974 98h154v48h-97v18h97v98H974v-48h97v-18h-97z" fill="#f6e56a"/>
+  <path d="M974 164h154v32H974z" fill="#f36d4d"/>
+  <path d="M1014 164h74v32h-74z" fill="#f4f0e7"/>
+</svg>
