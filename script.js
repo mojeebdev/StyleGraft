@@ -37,10 +37,13 @@ async function hydrateProjectStats() {
   const downloads = document.querySelector("[data-npm-downloads]");
 
   const requests = [
-    fetch("https://api.github.com/repos/mojeebdev/StyleGraft", { headers: { Accept: "application/vnd.github+json" } })
+    fetch("https://api.github.com/repos/mojeebdev/StyleGraft", {
+      cache: "no-store",
+      headers: { Accept: "application/vnd.github+json" },
+    })
       .then((response) => response.ok ? response.json() : Promise.reject())
       .then((data) => { stars.textContent = compactNumber.format(data.stargazers_count); }),
-    fetch("https://api.npmjs.org/downloads/point/last-month/%40blindspotlab%2Fstylegraft")
+    fetch("https://api.npmjs.org/downloads/point/last-month/%40blindspotlab%2Fstylegraft", { cache: "no-store" })
       .then((response) => response.ok ? response.json() : Promise.reject())
       .then((data) => { downloads.textContent = compactNumber.format(data.downloads); }),
   ];
@@ -49,3 +52,4 @@ async function hydrateProjectStats() {
 }
 
 hydrateProjectStats();
+setInterval(hydrateProjectStats, 5 * 60 * 1000);
