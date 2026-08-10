@@ -1,0 +1,32 @@
+{
+  "name": "stylegraft",
+  "version": "0.1.0",
+  "description": "Turn website screenshots into original design systems adapted to the product you are building.",
+  "author": {
+    "name": "BlindspotLab",
+    "url": "https://blindspotlab.xyz/"
+  },
+  "homepage": "https://stylegraft.blindspotlab.xyz/",
+  "repository": "https://github.com/mojeebdev/StyleGraft",
+  "license": "MIT",
+  "keywords": ["design-system", "design-md", "screenshots", "vibe-coding", "frontend"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "StyleGraft",
+    "shortDescription": "Adapt website inspiration to your product",
+    "longDescription": "Upload a full-page website screenshot and turn its transferable visual principles into an original, product-specific DESIGN.md for ChatGPT, Codex, and other coding agents.",
+    "developerName": "BlindspotLab",
+    "category": "Developer Tools",
+    "capabilities": ["Read", "Create files"],
+    "websiteURL": "https://stylegraft.blindspotlab.xyz/",
+    "privacyPolicyURL": "https://stylegraft.blindspotlab.xyz/privacy.html",
+    "termsOfServiceURL": "https://stylegraft.blindspotlab.xyz/terms.html",
+    "defaultPrompt": [
+      "Turn this website screenshot into a design system for my build.",
+      "Use StyleGraft to create a DESIGN.md for this repository from the attached reference."
+    ],
+    "brandColor": "#F6E56A",
+    "composerIcon": "./assets/blindspotlab-mark.png",
+    "logo": "./assets/blindspotlab-mark.png"
+  }
+}

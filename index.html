@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#18271f" />
+    <meta
+      name="description"
+      content="StyleGraft turns a full-page website screenshot into an original design system adapted to your product. Built for ChatGPT and Codex."
+    />
+    <meta property="og:title" content="StyleGraft — Reference in. Your system out." />
+    <meta
+      property="og:description"
+      content="Turn website inspiration into a design system made for your product."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://stylegraft.blindspotlab.xyz/" />
+    <link rel="icon" href="./assets/blindspotlab-mark.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>StyleGraft — Design systems from visual references</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://blindspotlab.xyz/#organization",
+            "name": "BlindspotLab",
+            "url": "https://blindspotlab.xyz/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://blindspotlab.xyz/web-app-manifest-512x512.png"
+            },
+            "founder": { "@id": "https://mojeeb.xyz/#person" },
+            "sameAs": [
+              "https://github.com/mojeebdev",
+              "https://x.com/BlindspotLab"
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://mojeeb.xyz/#person",
+            "name": "Mojeeb Titilayo",
+            "url": "https://mojeeb.xyz/",
+            "jobTitle": "Product Engineer and Strategist",
+            "worksFor": { "@id": "https://blindspotlab.xyz/#organization" },
+            "sameAs": [
+              "https://github.com/mojeebdev",
+              "https://x.com/MojeebMotion"
+            ]
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://stylegraft.blindspotlab.xyz/#product",
+            "name": "StyleGraft",
+            "applicationCategory": "DeveloperApplication",
+            "operatingSystem": "ChatGPT, Codex",
+            "description": "StyleGraft translates full-page website screenshots into original, product-specific design systems for AI coding agents.",
+            "url": "https://stylegraft.blindspotlab.xyz/",
+            "codeRepository": "https://github.com/mojeebdev/StyleGraft",
+            "isAccessibleForFree": true,
+            "creator": { "@id": "https://blindspotlab.xyz/#organization" },
+            "author": { "@id": "https://mojeeb.xyz/#person" },
+            "brand": { "@id": "https://blindspotlab.xyz/#organization" }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://stylegraft.blindspotlab.xyz/#website",
+            "name": "StyleGraft",
+            "url": "https://stylegraft.blindspotlab.xyz/",
+            "publisher": { "@id": "https://blindspotlab.xyz/#organization" },
+            "about": { "@id": "https://stylegraft.blindspotlab.xyz/#product" }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="StyleGraft home">
+        <span class="wordmark-dot" aria-hidden="true"></span>
+        StyleGraft
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#how">How it works</a>
+        <a href="#output">Output</a>
+        <a class="nav-cta" href="https://github.com/mojeebdev/StyleGraft">GitHub ↗</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="eyebrow"><span>For ChatGPT + Codex</span><span>Skills-only · Private by default</span></div>
+        <h1>Reference in.<br /><em>Your system</em> out.</h1>
+        <p class="hero-copy">
+          Drop a full website screenshot. StyleGraft understands what you are building, then
+          translates the reference into an original <code>DESIGN.md</code> made for your product.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://github.com/mojeebdev/StyleGraft">View the open source project</a>
+          <a class="button button-secondary" href="#how">See the translation</a>
+        </div>
+
+        <a class="studio-signature" href="https://blindspotlab.xyz/" aria-label="Visit BlindspotLab">
+          <img src="./assets/blindspotlab-mark.png" alt="BlindspotLab" />
+          <span><small>A</small> BlindspotLab <small>Product</small></span>
+        </a>
+      </section>
+
+      <section class="translation" aria-label="StyleGraft translation example">
+        <article class="reference-card">
+          <div class="card-label">01 / Reference</div>
+          <div class="mini-site" aria-hidden="true">
+            <div class="mini-nav"></div>
+            <div class="mini-copy"></div>
+            <div class="mini-grid"><i></i><i></i><i></i></div>
+            <div class="mini-block"></div>
+          </div>
+          <p>Full-page screenshot</p>
+        </article>
+        <div class="graft-mark" aria-hidden="true">→</div>
+        <article class="system-card">
+          <div class="card-label">02 / Adaptation</div>
+          <pre><span># Your product</span>
+intent: specific
+layout: translated
+voice: context-aware
+tokens: actionable
+anti_slop: enforced</pre>
+          <p>Product-specific system</p>
+        </article>
+      </section>
+
+      <section class="manifesto">
+        <p class="section-index">[ THE DIFFERENCE ]</p>
+        <h2>Not “copy this website.”<br />Understand why it <em>works.</em></h2>
+        <div class="manifesto-grid">
+          <p>
+            Most extractors stop at hex codes, font sizes and border radii. StyleGraft reads the
+            composition underneath: rhythm, density, image treatment, hierarchy, tension and the
+            deliberate imperfections that give a design its character.
+          </p>
+          <p>
+            Then it filters those decisions through your product, audience and codebase—keeping
+            the useful principles while leaving the original brand, content and identity behind.
+          </p>
+        </div>
+      </section>
+
+      <section class="steps" id="how">
+        <p class="section-index">[ HOW IT WORKS ]</p>
+        <div class="step-grid">
+          <article><span>01</span><h3>Show the reference</h3><p>Upload one clear, full-page website screenshot in ChatGPT or Codex.</p></article>
+          <article><span>02</span><h3>Ground the build</h3><p>Name what you are building—or let Codex inspect the repository for product context.</p></article>
+          <article><span>03</span><h3>Translate the taste</h3><p>Separate transferable visual principles from brand elements that should never be copied.</p></article>
+          <article><span>04</span><h3>Build with intent</h3><p>Receive an actionable DESIGN.md that your coding agent can follow immediately.</p></article>
+        </div>
+      </section>
+
+      <section class="output" id="output">
+        <div>
+          <p class="section-index">[ THE OUTPUT ]</p>
+          <h2>One file.<br />Far fewer guesses.</h2>
+          <p class="output-copy">A portable design direction for humans and coding agents—not a decorative brand report.</p>
+        </div>
+        <ul>
+          <li><span>01</span>Product intent and emotional target</li>
+          <li><span>02</span>Colour, typography and token logic</li>
+          <li><span>03</span>Layout and composition grammar</li>
+          <li><span>04</span>Imagery, motifs and material language</li>
+          <li><span>05</span>Responsive and interaction behaviour</li>
+          <li><span>06</span>Explicit anti-slop constraints</li>
+          <li><span>07</span>Observed versus inferred decisions</li>
+        </ul>
+      </section>
+
+      <section class="final-cta">
+        <p>Good taste should travel.</p>
+        <h2>Give your agent<br />something worth following.</h2>
+        <a class="button button-light" href="https://github.com/mojeebdev/StyleGraft">Follow the build on GitHub ↗</a>
+        <a class="studio-signature studio-signature-light" href="https://blindspotlab.xyz/">
+          <img src="./assets/blindspotlab-mark.png" alt="BlindspotLab" />
+          <span><small>A</small> BlindspotLab <small>Product</small></span>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 StyleGraft</span>
+      <span>Built in Lagos · Shipped globally</span>
+      <div><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a><a href="https://blindspotlab.xyz/">BlindspotLab ↗</a></div>
+    </footer>
+  </body>
+</html>

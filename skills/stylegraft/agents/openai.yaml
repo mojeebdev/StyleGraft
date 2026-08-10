@@ -1,0 +1,7 @@
+interface:
+  display_name: "StyleGraft"
+  short_description: "Adapt visual references to your product"
+  icon_small: "./assets/blindspotlab-mark.png"
+  icon_large: "./assets/blindspotlab-mark.png"
+  brand_color: "#F6E56A"
+  default_prompt: "Use $stylegraft to turn this website screenshot into an original design system for my build."
