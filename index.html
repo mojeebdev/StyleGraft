@@ -103,22 +103,53 @@
 
     <main id="main-content">
       <section class="hero">
-        <div class="eyebrow"><span>For ChatGPT + Codex</span><span>Open source · Skills-only · Private by default</span></div>
-        <h1>Reference in.<br /><em>Your system</em> out.</h1>
-        <p class="hero-copy">
-          Drop a full website screenshot. StyleGraft understands what you are building, then
-          translates the reference into an original <code>DESIGN.md</code> made for your product.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="https://github.com/mojeebdev/StyleGraft">View the open source project</a>
-          <a class="button button-secondary" href="#how">See the translation</a>
-        </div>
-        <p class="release-note"><span aria-hidden="true"></span> Public plugin in development</p>
-
-        <a class="studio-signature" href="https://blindspotlab.xyz/" aria-label="Visit BlindspotLab">
+        <a class="hero-studio" href="https://blindspotlab.xyz/" aria-label="StyleGraft is a BlindspotLab product">
           <img src="./assets/blindspotlab-mark.png" alt="BlindspotLab" />
           <span><small>A</small> BlindspotLab <small>Product</small></span>
         </a>
+        <div class="hero-layout">
+          <div class="hero-content">
+            <div class="eyebrow"><span>For ChatGPT + Codex</span><span>Open source · Skills-only</span></div>
+            <h1>Reference in.<br /><em>Your system</em> out.</h1>
+            <p class="hero-copy">
+              Drop a full website screenshot. StyleGraft understands what you are building, then
+              translates the reference into an original <code>DESIGN.md</code> made for your product.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://github.com/mojeebdev/StyleGraft">View the open source project</a>
+              <a class="button button-secondary" href="#how">See how it works</a>
+            </div>
+            <p class="release-note"><span aria-hidden="true"></span> Public plugin in development</p>
+          </div>
+
+          <div class="hero-demo" aria-label="A website reference becoming a product-specific design system">
+            <article class="hero-reference">
+              <div class="demo-topbar"><i></i><i></i><i></i><span>reference.png</span></div>
+              <div class="demo-webpage" aria-hidden="true">
+                <div class="demo-web-nav"><b>Fieldnote</b><span>Index&nbsp;&nbsp;About&nbsp;&nbsp;Start</span></div>
+                <div class="demo-web-hero"><strong>Ideas deserve<br />a visual language.</strong><i></i></div>
+                <div class="demo-web-band"><i></i><p></p></div>
+                <div class="demo-web-cards"><i></i><i></i><i></i></div>
+              </div>
+              <p><span>01</span> Reference in</p>
+            </article>
+
+            <div class="hero-transfer" aria-hidden="true"><span>translate</span>→</div>
+
+            <article class="hero-system">
+              <div class="demo-topbar"><i></i><i></i><i></i><span>DESIGN.md</span></div>
+              <div class="system-lines">
+                <p><b># Your build</b></p>
+                <p><em>intent:</em> unmistakably yours</p>
+                <p><em>composition:</em> editorial rhythm</p>
+                <p><em>colour:</em> semantic, not sampled</p>
+                <p><em>mobile:</em> designed, not stacked</p>
+                <p><em>anti_slop:</em> enforced</p>
+              </div>
+              <p><span>02</span> Your system out</p>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section class="translation" aria-label="StyleGraft translation example">
@@ -161,14 +192,78 @@ anti_slop: enforced</pre>
         </div>
       </section>
 
-      <section class="steps" id="how">
-        <p class="section-index">[ HOW IT WORKS ]</p>
-        <div class="step-grid">
-          <article><span>01</span><h3>Show the reference</h3><p>Upload one clear, full-page website screenshot in ChatGPT or Codex.</p></article>
-          <article><span>02</span><h3>Ground the build</h3><p>Name what you are building—or let Codex inspect the repository for product context.</p></article>
-          <article><span>03</span><h3>Translate the taste</h3><p>Separate transferable visual principles from brand elements that should never be copied.</p></article>
-          <article><span>04</span><h3>Build with intent</h3><p>Receive an actionable DESIGN.md that your coding agent can follow immediately.</p></article>
+      <section class="process" id="how">
+        <div class="process-heading">
+          <p class="section-index">[ HOW IT WORKS ]</p>
+          <h2>Four moves from<br />admiration to <em>direction.</em></h2>
         </div>
+
+        <article class="process-row process-reference">
+          <div class="process-copy"><span>01 / LOOK</span><h3>Show the reference</h3><p>Upload one clear, full-page website screenshot in ChatGPT or Codex. The whole page matters: hierarchy, rhythm, image treatment and the way sections change energy.</p></div>
+          <div class="reference-scroll" aria-label="Illustration of a full-page website reference">
+            <div class="reference-scroll-bar"><span></span><span></span><span></span></div>
+            <div class="reference-page">
+              <div class="ref-page-hero"><strong>Good work<br />has a pulse.</strong><i></i></div>
+              <div class="ref-page-split"><i></i><p></p></div>
+              <div class="ref-page-poster"><b>Make the idea visible.</b></div>
+              <div class="ref-page-footer"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="process-row process-ground">
+          <div class="repo-visual" aria-label="Illustration of StyleGraft reading product context from a codebase">
+            <div class="repo-window">
+              <div class="repo-head"><span>arcapush / main</span><b>•••</b></div>
+              <ul><li class="folder">app</li><li class="folder indent">components</li><li class="file indent">page.tsx</li><li class="file">README.md</li><li class="active-file">DESIGN.md <span>new</span></li></ul>
+              <div class="repo-pulse"><i></i><span>Reading product context</span></div>
+            </div>
+            <svg class="repo-orbit" viewBox="0 0 280 280" aria-hidden="true"><circle cx="140" cy="140" r="112"/><path d="M28 140h224M140 28v224"/></svg>
+          </div>
+          <div class="process-copy"><span>02 / GROUND</span><h3>Ground the build</h3><p>Tell StyleGraft the product name, audience and purpose—or let Codex inspect the repository. The reference is filtered through what your product actually needs.</p></div>
+        </article>
+
+        <article class="process-row process-taste">
+          <div class="process-copy"><span>03 / TRANSLATE</span><h3>Translate the taste</h3><p>Keep the principles that fit. Adapt the ones that need more trust or usability. Exclude the source brand’s protected expression.</p><p class="interaction-hint">Choose a translation lens →</p></div>
+          <div class="taste-lab" data-tone="editorial">
+            <div class="taste-controls" role="group" aria-label="Choose a design translation lens">
+              <button class="active" type="button" data-tone="editorial">Editorial</button>
+              <button type="button" data-tone="playful">Playful</button>
+              <button type="button" data-tone="precise">Precise</button>
+            </div>
+            <div class="taste-canvas">
+              <div class="taste-shape taste-shape-a"></div><div class="taste-shape taste-shape-b"></div>
+              <p class="taste-kicker">PRODUCT DIRECTION</p>
+              <strong class="taste-title">Confident rhythm.<br />Human edges.</strong>
+              <div class="taste-swatches"><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="taste-rules"><span>Preserve: <b>rhythm</b></span><span>Adapt: <b>trust</b></span><span>Exclude: <b>brand assets</b></span></div>
+          </div>
+        </article>
+
+        <article class="process-row process-build">
+          <div class="build-visual">
+            <div class="build-tabs" role="tablist" aria-label="View design system or implementation preview">
+              <button class="active" type="button" role="tab" data-build-tab="spec">DESIGN.md</button>
+              <button type="button" role="tab" data-build-tab="preview">Built result</button>
+            </div>
+            <div class="build-panel active" data-build-panel="spec"><pre><b># Arcapush</b>
+
+## Composition grammar
+- editorial discovery grid
+- high-signal product density
+- intentional asymmetric rhythm
+
+## Never
+- generic feature-card rows
+- arbitrary gradients
+- empty oversized hero</pre></div>
+            <div class="build-panel" data-build-panel="preview">
+              <div class="built-page"><header><b>Arcapush</b><span>Discover&nbsp;&nbsp; Ship</span></header><main><p>CURATED THIS WEEK</p><strong>Products with<br />something to prove.</strong><div><i></i><i></i><i></i></div></main></div>
+            </div>
+          </div>
+          <div class="process-copy"><span>04 / BUILD</span><h3>Build with intent</h3><p>Receive an actionable <code>DESIGN.md</code> your agent can use immediately. Switch the example to see how written direction becomes a distinct interface.</p></div>
+        </article>
       </section>
 
       <section class="output" id="output">
@@ -189,9 +284,19 @@ anti_slop: enforced</pre>
       </section>
 
       <section class="final-cta">
-        <p>Good taste should travel.</p>
-        <h2>Give your agent<br />something worth following.</h2>
-        <a class="button button-light" href="https://github.com/mojeebdev/StyleGraft">Follow the build on GitHub ↗</a>
+        <div class="agent-field" aria-hidden="true">
+          <div class="agent-mark agent-codex"><img src="./assets/agents/codex.svg" alt="" /><span>Codex</span></div>
+          <div class="agent-mark agent-claude"><img src="./assets/agents/claude-code.svg" alt="" /><span>Claude Code</span></div>
+          <div class="agent-mark agent-cursor"><img src="./assets/agents/cursor.svg" alt="" /><span>Cursor</span></div>
+          <div class="agent-mark agent-gemini"><img src="./assets/agents/gemini.svg" alt="" /><span>Gemini</span></div>
+          <div class="agent-mark agent-copilot"><img src="./assets/agents/github-copilot.svg" alt="" /><span>Copilot</span></div>
+          <div class="agent-mark agent-windsurf"><img src="./assets/agents/windsurf.svg" alt="" /><span>Windsurf</span></div>
+        </div>
+        <div class="final-cta-content">
+          <p>Works wherever DESIGN.md travels.</p>
+          <h2>Give your agent<br />something worth following.</h2>
+          <a class="button button-light" href="https://github.com/mojeebdev/StyleGraft">Follow the build on GitHub ↗</a>
+        </div>
         <a class="studio-signature studio-signature-light" href="https://blindspotlab.xyz/">
           <img src="./assets/blindspotlab-mark.png" alt="BlindspotLab" />
           <span><small>A</small> BlindspotLab <small>Product</small></span>
@@ -204,5 +309,6 @@ anti_slop: enforced</pre>
       <span>Built in Lagos · Shipped globally</span>
       <div><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a><a href="https://blindspotlab.xyz/">BlindspotLab ↗</a></div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
