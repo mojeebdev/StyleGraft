@@ -1,6 +1,6 @@
 {
   "name": "@blindspotlab/stylegraft",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Turn website references into original, product-specific design systems for ChatGPT and Codex.",
   "type": "module",
   "bin": {
