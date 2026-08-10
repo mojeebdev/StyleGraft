@@ -69,6 +69,18 @@ If the build is not already known, StyleGraft asks what you are building, what i
 
 The website includes a 1200×630 social preview at `assets/brand/stylegraft-social.png`, configured for Open Graph and X/Twitter cards in `index.html`. Update the absolute image URL and canonical URL if the production domain changes. Social networks cache previews, so use their sharing debugger or a versioned image URL after replacing the artwork.
 
+## Publishing to npm
+
+The `Publish to npm` GitHub Actions workflow tests the package, inspects the tarball, rejects duplicate versions and publishes with npm provenance.
+
+For the first release:
+
+1. Create an npm granular access token allowed to publish `@blindspotlab/stylegraft`.
+2. Add it to the GitHub repository as an Actions secret named `NPM_TOKEN`.
+3. Open **Actions → Publish to npm → Run workflow** and choose the `latest` tag.
+
+For later releases, bump the version in `package.json` before running the workflow. After the first package exists on npm, configure npm Trusted Publishing for this repository and `.github/workflows/publish-npm.yml`, then remove the `NPM_TOKEN` secret.
+
 ## Principles
 
 - Adapt visual principles to product context.
