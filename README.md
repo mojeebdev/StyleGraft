@@ -23,6 +23,22 @@ terms.html                  Terms
 
 StyleGraft is skills-only. It does not require an API key, external account or hosted backend.
 
+### npm / Codex
+
+Install StyleGraft for your user account:
+
+```bash
+npx stylegraft install
+```
+
+Or add it only to the current repository so the team can share it:
+
+```bash
+npx stylegraft install --project
+```
+
+Verify the installation with `npx stylegraft doctor` (add `--project` for a repository install), restart Codex if needed, then invoke `$stylegraft`.
+
 ### ChatGPT
 
 1. Download or clone this repository.
