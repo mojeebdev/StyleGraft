@@ -19,13 +19,39 @@ privacy.html                Privacy notice
 terms.html                  Terms
 ```
 
-## Try the skill locally
+## Configure StyleGraft
 
-Package the repository as a skills-only plugin or point a local plugin marketplace at this directory. Then attach a full-page website screenshot and ask:
+StyleGraft is skills-only. It does not require an API key, external account or hosted backend.
+
+### ChatGPT
+
+1. Download or clone this repository.
+2. Import `skills/stylegraft` through Skills if your workspace supports custom skill installation.
+3. Attach a full-page website screenshot and invoke `@stylegraft`:
+
+> @stylegraft Turn this reference into an original design system for Arcapush, a discovery platform for serious solo builders.
+
+### Codex
+
+1. Clone the repository and install the included `skills/stylegraft` skill.
+2. Open the product repository so Codex can inspect its context.
+3. Attach the reference and invoke `$stylegraft`:
+
+> $stylegraft Inspect this repository, use the attached full-page reference, and create DESIGN.md before implementation.
+
+ChatGPT uses `@` mentions and Codex uses `$` mentions for explicitly selecting a skill. Installation and sharing controls may depend on workspace settings. StyleGraft will move to one-click installation after plugin-directory approval.
+
+## How to use it
+
+You can also describe the task naturally after installation:
 
 > Turn this into a design system for my build.
 
 If the build is not already known, StyleGraft asks what you are building, what it is called and who it serves. In Codex, it inspects the repository before asking questions.
+
+## Open Graph
+
+The website includes a 1200×630 social preview at `assets/brand/stylegraft-social.png`, configured for Open Graph and X/Twitter cards in `index.html`. Update the absolute image URL and canonical URL if the production domain changes. Social networks cache previews, so use their sharing debugger or a versioned image URL after replacing the artwork.
 
 ## Principles
 

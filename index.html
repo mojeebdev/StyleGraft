@@ -19,11 +19,13 @@
     <meta property="og:image" content="https://stylegraft.peerfix.dev/assets/brand/stylegraft-social.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:alt" content="StyleGraft — Reference in. Your system out." />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="StyleGraft — Reference in. Your system out." />
     <meta name="twitter:description" content="Turn website inspiration into a design system made for your product." />
     <meta name="twitter:image" content="https://stylegraft.peerfix.dev/assets/brand/stylegraft-social.png" />
+    <meta name="twitter:image:alt" content="StyleGraft — Reference in. Your system out." />
     <link rel="canonical" href="https://stylegraft.peerfix.dev/" />
     <link rel="manifest" href="./site.webmanifest" />
     <link rel="icon" href="./assets/brand/stylegraft-mark.svg" type="image/svg+xml" />
@@ -105,6 +107,7 @@
       </a>
       <nav aria-label="Primary navigation">
         <a href="#how">How it works</a>
+        <a href="#configure">Configure</a>
         <a href="#output">Output</a>
         <a class="nav-cta" href="https://github.com/mojeebdev/StyleGraft">GitHub ↗</a>
       </nav>
@@ -273,6 +276,31 @@ anti_slop: enforced</pre>
           </div>
           <div class="process-copy"><span>04 / BUILD</span><h3>Build with intent</h3><p>Receive an actionable <code>DESIGN.md</code> your agent can use immediately. Switch the example to see how written direction becomes a distinct interface.</p></div>
         </article>
+      </section>
+
+      <section class="configure" id="configure">
+        <div class="configure-intro">
+          <p class="section-index">[ CONFIGURE + USE ]</p>
+          <h2>Give it a reference.<br /><em>Name the build.</em></h2>
+          <p>StyleGraft is a reusable skill, so there is no API key or external account to configure. Install the repository skill once, attach a full-page screenshot, and invoke it whenever a build needs stronger visual direction.</p>
+          <div class="availability"><i aria-hidden="true"></i><span>Repository install available now</span><small>Plugin directory submission next</small></div>
+        </div>
+        <div class="configure-paths">
+          <article>
+            <div class="configure-label"><span>01</span><b>ChatGPT</b><small>@ mention</small></div>
+            <ol><li>Download or clone the GitHub repository.</li><li>In Skills, import the <code>skills/stylegraft</code> folder if custom skills are enabled for your workspace.</li><li>Attach a full-page reference and mention <code>@stylegraft</code>.</li></ol>
+            <div class="prompt-block"><span>TRY THIS</span><p>@stylegraft Turn this reference into an original design system for Arcapush, a discovery platform for serious solo builders.</p></div>
+          </article>
+          <article>
+            <div class="configure-label"><span>02</span><b>Codex</b><small>$ mention</small></div>
+            <ol><li>Clone the repository and install its included StyleGraft skill.</li><li>Open the product codebase so Codex can inspect its real context.</li><li>Attach the reference and invoke <code>$stylegraft</code>.</li></ol>
+            <div class="prompt-block"><span>TRY THIS</span><p>$stylegraft Inspect this repository, use the attached full-page reference, and create DESIGN.md before implementation.</p></div>
+          </article>
+        </div>
+        <div class="configure-footer">
+          <p>StyleGraft outputs guidance first. Review <code>DESIGN.md</code>, then tell your coding agent to build from it.</p>
+          <a class="button button-primary" href="https://github.com/mojeebdev/StyleGraft">Get StyleGraft on GitHub ↗</a>
+        </div>
       </section>
 
       <section class="output" id="output">
