@@ -28,16 +28,16 @@ StyleGraft is skills-only. It does not require an API key, external account or h
 Install StyleGraft for your user account:
 
 ```bash
-npx stylegraft install
+npx @blindspotlab/stylegraft install
 ```
 
 Or add it only to the current repository so the team can share it:
 
 ```bash
-npx stylegraft install --project
+npx @blindspotlab/stylegraft install --project
 ```
 
-Verify the installation with `npx stylegraft doctor` (add `--project` for a repository install), restart Codex if needed, then invoke `$stylegraft`.
+Verify the installation with `npx @blindspotlab/stylegraft doctor` (add `--project` for a repository install), restart Codex if needed, then invoke `$stylegraft`.
 
 ### ChatGPT
 
@@ -83,7 +83,7 @@ Early public build. The skill and output schema are being evaluated across diver
 
 ## Credits
 
-A [BlindspotLab](https://blindspotlab.xyz/) product by [Mojeeb Titilayo](https://mojeeb.xyz/).
+A [BlindspotLab](https://blindspotlab.xyz/) product founded and created by [Mojeeb Titilayo](https://mojeeb.xyz/).
 
 ## License
 
