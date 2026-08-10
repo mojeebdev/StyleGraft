@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#18271f" />
+    <meta name="author" content="Mojeeb Titilayo" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
     <meta
       name="description"
       content="StyleGraft turns a full-page website screenshot into an original design system adapted to your product. Built for ChatGPT and Codex."
@@ -81,7 +83,20 @@
             "url": "https://stylegraft.peerfix.dev/",
             "codeRepository": "https://github.com/mojeebdev/StyleGraft",
             "image": "https://stylegraft.peerfix.dev/assets/brand/stylegraft-social.png",
+            "softwareVersion": "0.1.0",
+            "license": "https://opensource.org/license/mit",
             "isAccessibleForFree": true,
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "featureList": [
+              "Translate full-page website screenshots into original design direction",
+              "Inspect product context and codebases",
+              "Generate an actionable DESIGN.md",
+              "Define anti-slop constraints for AI coding agents"
+            ],
             "creator": { "@id": "https://blindspotlab.xyz/#organization" },
             "author": { "@id": "https://mojeeb.xyz/#person" },
             "brand": { "@id": "https://blindspotlab.xyz/#organization" }
@@ -93,6 +108,32 @@
             "url": "https://stylegraft.peerfix.dev/",
             "publisher": { "@id": "https://blindspotlab.xyz/#organization" },
             "about": { "@id": "https://stylegraft.peerfix.dev/#product" }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://stylegraft.peerfix.dev/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is StyleGraft?",
+                "acceptedAnswer": { "@type": "Answer", "text": "StyleGraft is an open-source skill that turns a full-page website reference into an original, product-specific DESIGN.md for ChatGPT and Codex." }
+              },
+              {
+                "@type": "Question",
+                "name": "Does StyleGraft copy the referenced website?",
+                "acceptedAnswer": { "@type": "Answer", "text": "No. StyleGraft translates transferable principles such as hierarchy, rhythm, composition and image treatment while excluding protected brand expression, copy and proprietary assets." }
+              },
+              {
+                "@type": "Question",
+                "name": "Does StyleGraft require an API key?",
+                "acceptedAnswer": { "@type": "Answer", "text": "No. StyleGraft is a skills-only workflow and does not require a separate API key, hosted backend or StyleGraft account." }
+              },
+              {
+                "@type": "Question",
+                "name": "Who created StyleGraft?",
+                "acceptedAnswer": { "@type": "Answer", "text": "StyleGraft was created by Product Engineer and Strategist Mojeeb Titilayo as a BlindspotLab product." }
+              }
+            ]
           }
         ]
       }
@@ -204,6 +245,42 @@ anti_slop: enforced</pre>
         </div>
       </section>
 
+      <section class="origin" id="origin">
+        <div class="origin-heading">
+          <p class="section-index">[ THE ORIGIN ]</p>
+          <h2>Built from a blind spot<br />in my own <em>process.</em></h2>
+        </div>
+        <div class="origin-story">
+          <p class="origin-lead">In early August 2026, I stepped away from X for the weekend and went back to learning about design systems.</p>
+          <div class="origin-columns">
+            <p>I had last studied them seriously around April or May, but this time something clicked. I began to understand that a strong design system is not just a collection of colours, type sizes and reusable components. It is the reasoning underneath the interface: its rhythm, hierarchy, composition, imagery, constraints and the choices that give it character.</p>
+            <p>The next day, I came across Claude’s approach to design and it changed the way I thought about building with AI. Claude had a design workflow people could use, but I could not find an equivalent built specifically for ChatGPT and Codex—one where you could bring a full website reference, explain what you were building, and receive an original design system your coding agent could actually follow.</p>
+          </div>
+          <blockquote><span>That was the blind spot.</span><strong>So I built StyleGraft.</strong></blockquote>
+          <div class="origin-columns">
+            <p>The first product I tested it on was StyleGraft itself. I used what I had learned during that weekend to rethink the website you are looking at now. The goal was not to copy another website or extract a few design tokens. It was to understand why a reference worked, translate those principles through the context of my own product, and produce something that still felt original.</p>
+            <p>I created it because vibe coders and AI builders deserve better than generic interfaces, random gradients and the same repeated AI design patterns. StyleGraft turns that process into a reusable workflow for everyone.</p>
+          </div>
+          <p class="origin-close">Good taste should not disappear when the coding agent takes over.</p>
+        </div>
+
+        <article class="founder">
+          <figure><img src="https://mojeeb.xyz/mojeeb_headshot.png" alt="Mojeeb Titilayo, founder of StyleGraft and BlindspotLab" width="381" height="508" loading="lazy" /></figure>
+          <div class="founder-copy">
+            <p class="section-index">[ ABOUT THE FOUNDER ]</p>
+            <h3>Mojeeb Titilayo</h3>
+            <p>Mojeeb is a Product Engineer and Strategist building products at the intersection of AI, design and developer tools.</p>
+            <p>He is the founder of <a href="https://blindspotlab.xyz/">BlindspotLab</a>, an independent product studio focused on finding overlooked problems and turning them into useful, thoughtfully built products. Across AI, SaaS, developer tools and Web3, he has built and shipped more than 40 products, platforms and experiments.</p>
+            <p>StyleGraft reflects how he approaches product development: understand the real problem, question the obvious solution, and build something people can use—not another experiment that ends at the demo.</p>
+            <a class="founder-link" href="https://mojeeb.xyz/">More about Mojeeb ↗</a>
+          </div>
+        </article>
+
+        <div class="ownership" aria-label="StyleGraft ownership and licence">
+          <span>Open source</span><a href="https://github.com/mojeebdev/StyleGraft/blob/main/LICENSE">MIT Licence ↗</a><a href="https://blindspotlab.xyz/">A BlindspotLab Product ↗</a><a href="https://mojeeb.xyz/">Founded by Mojeeb Titilayo ↗</a>
+        </div>
+      </section>
+
       <section class="process" id="how">
         <div class="process-heading">
           <p class="section-index">[ HOW IT WORKS ]</p>
@@ -283,7 +360,7 @@ anti_slop: enforced</pre>
           <p class="section-index">[ CONFIGURE + USE ]</p>
           <h2>Give it a reference.<br /><em>Name the build.</em></h2>
           <p>StyleGraft is a reusable skill, so there is no API key or external account to configure. Install the repository skill once, attach a full-page screenshot, and invoke it whenever a build needs stronger visual direction.</p>
-          <div class="availability"><i aria-hidden="true"></i><span>Repository install available now</span><small>Plugin directory submission next</small></div>
+          <div class="availability"><i aria-hidden="true"></i><span>Open source · MIT licensed</span><small>Plugin directory submission next</small></div>
         </div>
         <div class="configure-paths">
           <article>
@@ -293,13 +370,23 @@ anti_slop: enforced</pre>
           </article>
           <article>
             <div class="configure-label"><span>02</span><b>Codex</b><small>$ mention</small></div>
-            <ol><li>Clone the repository and install its included StyleGraft skill.</li><li>Open the product codebase so Codex can inspect its real context.</li><li>Attach the reference and invoke <code>$stylegraft</code>.</li></ol>
+            <ol><li>Run <code>npx @blindspotlab/stylegraft install</code> for your user account.</li><li>Open the product codebase so Codex can inspect its real context.</li><li>Attach the reference and invoke <code>$stylegraft</code>.</li></ol>
             <div class="prompt-block"><span>TRY THIS</span><p>$stylegraft Inspect this repository, use the attached full-page reference, and create DESIGN.md before implementation.</p></div>
           </article>
         </div>
         <div class="configure-footer">
           <p>StyleGraft outputs guidance first. Review <code>DESIGN.md</code>, then tell your coding agent to build from it.</p>
           <a class="button button-primary" href="https://github.com/mojeebdev/StyleGraft">Get StyleGraft on GitHub ↗</a>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div><p class="section-index">[ QUESTIONS, ANSWERED ]</p><h2>Before you<br /><em>graft.</em></h2></div>
+        <div class="faq-list">
+          <details open><summary>What is StyleGraft?</summary><p>StyleGraft is an open-source skill that turns a full-page website reference into an original, product-specific <code>DESIGN.md</code> for ChatGPT and Codex.</p></details>
+          <details><summary>Does it copy the referenced website?</summary><p>No. It translates transferable principles such as hierarchy, rhythm, composition and image treatment while excluding protected brand expression, copy and proprietary assets.</p></details>
+          <details><summary>Does it require an API key?</summary><p>No. StyleGraft is a skills-only workflow. It does not require a separate API key, hosted backend or StyleGraft account.</p></details>
+          <details><summary>Who created StyleGraft?</summary><p>StyleGraft was created by Product Engineer and Strategist <a href="https://mojeeb.xyz/">Mojeeb Titilayo</a> as a <a href="https://blindspotlab.xyz/">BlindspotLab</a> product. It is open source under the MIT Licence.</p></details>
         </div>
       </section>
 
@@ -344,7 +431,7 @@ anti_slop: enforced</pre>
     <footer>
       <span>© 2026 StyleGraft</span>
       <span>Built in Lagos · Shipped globally</span>
-      <div><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a><a href="https://blindspotlab.xyz/">BlindspotLab ↗</a></div>
+      <div><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a><a href="https://github.com/mojeebdev/StyleGraft/blob/main/LICENSE">MIT Licence</a><a href="https://blindspotlab.xyz/">BlindspotLab ↗</a></div>
     </footer>
     <script src="./script.js"></script>
   </body>
