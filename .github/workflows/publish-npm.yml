@@ -1,0 +1,66 @@
+name: Publish to npm
+
+on:
+  workflow_dispatch:
+    inputs:
+      dist_tag:
+        description: npm distribution tag
+        required: true
+        default: latest
+        type: choice
+        options:
+          - latest
+          - next
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: npm-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Test and publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      NPM_TAG: ${{ inputs.dist_tag || 'latest' }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+          scope: "@blindspotlab"
+          cache: npm
+
+      - name: Install exact dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+      - name: Verify package contents
+        run: npm pack --dry-run
+
+      - name: Reject an existing version
+        shell: bash
+        run: |
+          PACKAGE_NAME=$(node -p "require('./package.json').name")
+          PACKAGE_VERSION=$(node -p "require('./package.json').version")
+          if npm view "$PACKAGE_NAME@$PACKAGE_VERSION" version >/dev/null 2>&1; then
+            echo "::error::$PACKAGE_NAME@$PACKAGE_VERSION already exists on npm. Bump the version before publishing."
+            exit 1
+          fi
+
+      - name: Publish package with provenance
+        run: npm publish --access public --provenance --tag "$NPM_TAG"
