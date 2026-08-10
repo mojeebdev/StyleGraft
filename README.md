@@ -4,6 +4,8 @@
 
 StyleGraft is an open-source, skills-only plugin for ChatGPT and Codex. Upload a full-page website screenshot, describe what you are building—or let Codex inspect the repository—and receive an original, product-specific `DESIGN.md`.
 
+Website: [stylegraft.peerfix.dev](https://stylegraft.peerfix.dev/)
+
 It translates composition, hierarchy, rhythm, colour logic, typography character, imagery and intentional imperfections. It does not copy source branding, content or proprietary assets.
 
 ## Repository structure

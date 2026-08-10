@@ -6,7 +6,7 @@
     "name": "BlindspotLab",
     "url": "https://blindspotlab.xyz/"
   },
-  "homepage": "https://stylegraft.blindspotlab.xyz/",
+  "homepage": "https://stylegraft.peerfix.dev/",
   "repository": "https://github.com/mojeebdev/StyleGraft",
   "license": "MIT",
   "keywords": ["design-system", "design-md", "screenshots", "vibe-coding", "frontend"],
@@ -18,9 +18,9 @@
     "developerName": "BlindspotLab",
     "category": "Developer Tools",
     "capabilities": ["Read", "Create files"],
-    "websiteURL": "https://stylegraft.blindspotlab.xyz/",
-    "privacyPolicyURL": "https://stylegraft.blindspotlab.xyz/privacy.html",
-    "termsOfServiceURL": "https://stylegraft.blindspotlab.xyz/terms.html",
+    "websiteURL": "https://stylegraft.peerfix.dev/",
+    "privacyPolicyURL": "https://stylegraft.peerfix.dev/privacy.html",
+    "termsOfServiceURL": "https://stylegraft.peerfix.dev/terms.html",
     "defaultPrompt": [
       "Turn this website screenshot into a design system for my build.",
       "Use StyleGraft to create a DESIGN.md for this repository from the attached reference."

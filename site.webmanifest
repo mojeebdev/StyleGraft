@@ -1,0 +1,17 @@
+{
+  "name": "StyleGraft",
+  "short_name": "StyleGraft",
+  "description": "Turn website inspiration into a design system made for your product.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f0e7",
+  "theme_color": "#18271f",
+  "icons": [
+    {
+      "src": "/assets/blindspotlab-mark.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

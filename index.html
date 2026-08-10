@@ -14,7 +14,13 @@
       content="Turn website inspiration into a design system made for your product."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://stylegraft.blindspotlab.xyz/" />
+    <meta property="og:url" content="https://stylegraft.peerfix.dev/" />
+    <meta property="og:site_name" content="StyleGraft" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="StyleGraft — Reference in. Your system out." />
+    <meta name="twitter:description" content="Turn website inspiration into a design system made for your product." />
+    <link rel="canonical" href="https://stylegraft.peerfix.dev/" />
+    <link rel="manifest" href="./site.webmanifest" />
     <link rel="icon" href="./assets/blindspotlab-mark.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -57,12 +63,12 @@
           },
           {
             "@type": "SoftwareApplication",
-            "@id": "https://stylegraft.blindspotlab.xyz/#product",
+            "@id": "https://stylegraft.peerfix.dev/#product",
             "name": "StyleGraft",
             "applicationCategory": "DeveloperApplication",
             "operatingSystem": "ChatGPT, Codex",
             "description": "StyleGraft translates full-page website screenshots into original, product-specific design systems for AI coding agents.",
-            "url": "https://stylegraft.blindspotlab.xyz/",
+            "url": "https://stylegraft.peerfix.dev/",
             "codeRepository": "https://github.com/mojeebdev/StyleGraft",
             "isAccessibleForFree": true,
             "creator": { "@id": "https://blindspotlab.xyz/#organization" },
@@ -71,17 +77,18 @@
           },
           {
             "@type": "WebSite",
-            "@id": "https://stylegraft.blindspotlab.xyz/#website",
+            "@id": "https://stylegraft.peerfix.dev/#website",
             "name": "StyleGraft",
-            "url": "https://stylegraft.blindspotlab.xyz/",
+            "url": "https://stylegraft.peerfix.dev/",
             "publisher": { "@id": "https://blindspotlab.xyz/#organization" },
-            "about": { "@id": "https://stylegraft.blindspotlab.xyz/#product" }
+            "about": { "@id": "https://stylegraft.peerfix.dev/#product" }
           }
         ]
       }
     </script>
   </head>
-  <body>
+  <body id="top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <a class="wordmark" href="#top" aria-label="StyleGraft home">
         <span class="wordmark-dot" aria-hidden="true"></span>
@@ -94,9 +101,9 @@
       </nav>
     </header>
 
-    <main id="top">
+    <main id="main-content">
       <section class="hero">
-        <div class="eyebrow"><span>For ChatGPT + Codex</span><span>Skills-only · Private by default</span></div>
+        <div class="eyebrow"><span>For ChatGPT + Codex</span><span>Open source · Skills-only · Private by default</span></div>
         <h1>Reference in.<br /><em>Your system</em> out.</h1>
         <p class="hero-copy">
           Drop a full website screenshot. StyleGraft understands what you are building, then
@@ -106,6 +113,7 @@
           <a class="button button-primary" href="https://github.com/mojeebdev/StyleGraft">View the open source project</a>
           <a class="button button-secondary" href="#how">See the translation</a>
         </div>
+        <p class="release-note"><span aria-hidden="true"></span> Public plugin in development</p>
 
         <a class="studio-signature" href="https://blindspotlab.xyz/" aria-label="Visit BlindspotLab">
           <img src="./assets/blindspotlab-mark.png" alt="BlindspotLab" />
