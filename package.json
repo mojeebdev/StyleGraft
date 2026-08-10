@@ -1,0 +1,39 @@
+{
+  "name": "stylegraft",
+  "version": "0.1.0",
+  "description": "Turn website references into original, product-specific design systems for ChatGPT and Codex.",
+  "type": "module",
+  "bin": {
+    "stylegraft": "bin/stylegraft.js"
+  },
+  "files": [
+    "bin/",
+    "skills/stylegraft/",
+    ".codex-plugin/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "pack:check": "npm pack --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mojeebdev/StyleGraft.git"
+  },
+  "homepage": "https://stylegraft.peerfix.dev/",
+  "bugs": "https://github.com/mojeebdev/StyleGraft/issues",
+  "keywords": [
+    "codex",
+    "chatgpt",
+    "design-system",
+    "agent-skill",
+    "frontend",
+    "vibe-coding"
+  ],
+  "author": "Mojeeb Titilayo <https://mojeeb.xyz/>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
