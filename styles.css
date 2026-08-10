@@ -78,7 +78,7 @@ pre span { color: var(--acid); }
 .final-cta { min-height: 80vh; padding: clamp(80px, 10vw, 140px) 20px 52px; background: var(--coral); text-align: center; display: flex; flex-direction: column; align-items: center; }
 .final-cta > p { font: 12px "DM Mono", monospace; text-transform: uppercase; }
 .final-cta h2 { margin: auto 0 48px; }
-.button-light { background: var(--paper); border-color: var(--ink); }
+.button-light { background: var(--paper); border-color: var(--ink); color: var(--ink); }
 .studio-signature-light { margin-top: 46px; }
 footer { padding: 24px clamp(20px, 4vw, 64px); display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; background: var(--ink); color: var(--paper); font: 11px "DM Mono", monospace; text-transform: uppercase; }
 footer > span:nth-child(2) { text-align: center; }
