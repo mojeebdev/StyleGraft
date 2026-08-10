@@ -170,3 +170,60 @@ footer div { display: flex; justify-content: flex-end; gap: 20px; }
 
 @media(max-width:980px){.hero-layout{grid-template-columns:1fr}.hero-demo{min-height:620px;max-width:720px;width:100%;margin:20px auto 0}.process-row{grid-template-columns:1fr}.process-ground .repo-visual,.process-build .build-visual{order:2}.process-copy{max-width:700px}.reference-scroll,.taste-lab,.build-visual{width:min(100%,680px);justify-self:center}}
 @media(max-width:600px){.hero{padding-top:100px}.hero-studio{margin-bottom:30px}.hero h1{font-size:58px}.hero-content .eyebrow span:last-child{display:none}.hero-demo{min-height:520px}.hero-reference{width:72%}.hero-system{width:68%}.demo-webpage{min-height:350px}.demo-web-hero{min-height:140px}.demo-web-band i{min-height:65px}.system-lines{min-height:290px;padding:20px 15px;font-size:9px}.process-row{min-height:0}.taste-rules{grid-template-columns:1fr}.taste-rules span{border-right:0;border-bottom:1px solid}.taste-canvas{padding:32px 22px;min-height:330px}.taste-title{font-size:45px}.agent-mark span{display:none}.agent-mark{padding:10px}.agent-copilot,.agent-windsurf{display:none}}
+
+/* Keep the complete desktop introduction inside the first viewport. */
+@media (min-width: 981px) {
+  .hero {
+    height: 100svh;
+    min-height: 720px;
+    padding: 96px clamp(32px, 4vw, 64px) 30px;
+  }
+
+  .hero-studio {
+    align-self: center;
+    margin-bottom: clamp(14px, 2vh, 22px);
+    font-size: 12px;
+  }
+
+  .hero-studio img { width: 23px; height: 23px; }
+
+  .hero-layout {
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+    grid-template-columns: minmax(0, .9fr) minmax(440px, 1.1fr);
+    gap: clamp(38px, 5vw, 80px);
+  }
+
+  .hero h1 {
+    max-width: 650px;
+    margin: clamp(22px, 3vh, 32px) 0 20px;
+    font-size: clamp(68px, 5.3vw, 96px);
+    line-height: .84;
+  }
+
+  .hero-copy {
+    max-width: 590px;
+    margin-bottom: 22px;
+    font-size: clamp(15px, 1.2vw, 18px);
+    line-height: 1.5;
+  }
+
+  .button { min-height: 46px; padding-inline: 18px; }
+  .release-note { margin-top: 14px; }
+
+  .hero-demo {
+    min-height: 0;
+    height: min(55vh, 520px);
+    align-self: center;
+  }
+
+  .hero-reference { width: 58%; }
+  .hero-system { width: 53%; bottom: 0; }
+  .demo-webpage { min-height: 350px; }
+  .demo-web-hero { min-height: 145px; padding: 28px 18px; }
+  .demo-web-hero strong { font-size: clamp(25px, 2.3vw, 38px); }
+  .demo-web-band i { min-height: 68px; }
+  .demo-web-cards i { height: 42px; }
+  .system-lines { min-height: 300px; padding: 24px 20px; font-size: 11px; }
+}
