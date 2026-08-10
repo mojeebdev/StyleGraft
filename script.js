@@ -26,3 +26,26 @@ document.querySelectorAll("[data-build-tab]").forEach((button) => {
     visual.querySelectorAll("[data-build-panel]").forEach((panel) => panel.classList.toggle("active", panel.dataset.buildPanel === button.dataset.buildTab));
   });
 });
+
+const compactNumber = new Intl.NumberFormat("en", {
+  notation: "compact",
+  maximumFractionDigits: 1,
+});
+
+async function hydrateProjectStats() {
+  const stars = document.querySelector("[data-github-stars]");
+  const downloads = document.querySelector("[data-npm-downloads]");
+
+  const requests = [
+    fetch("https://api.github.com/repos/mojeebdev/StyleGraft", { headers: { Accept: "application/vnd.github+json" } })
+      .then((response) => response.ok ? response.json() : Promise.reject())
+      .then((data) => { stars.textContent = compactNumber.format(data.stargazers_count); }),
+    fetch("https://api.npmjs.org/downloads/point/last-month/%40blindspotlab%2Fstylegraft")
+      .then((response) => response.ok ? response.json() : Promise.reject())
+      .then((data) => { downloads.textContent = compactNumber.format(data.downloads); }),
+  ];
+
+  await Promise.allSettled(requests);
+}
+
+hydrateProjectStats();
