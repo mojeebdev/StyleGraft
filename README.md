@@ -6,6 +6,8 @@ StyleGraft is an open-source, skills-only plugin for ChatGPT and Codex. Upload a
 
 Website: [stylegraft.peerfix.dev](https://stylegraft.peerfix.dev/)
 
+[npm package](https://www.npmjs.com/package/@blindspotlab/stylegraft) · [GitHub repository](https://github.com/mojeebdev/StyleGraft) · [MIT Licence](./LICENSE)
+
 It translates composition, hierarchy, rhythm, colour logic, typography character, imagery and intentional imperfections. It does not copy source branding, content or proprietary assets.
 
 ## Repository structure
@@ -37,25 +39,43 @@ Or add it only to the current repository so the team can share it:
 npx @blindspotlab/stylegraft install --project
 ```
 
-Verify the installation with `npx @blindspotlab/stylegraft doctor` (add `--project` for a repository install), restart Codex if needed, then invoke `$stylegraft`.
+Verify it with `npx @blindspotlab/stylegraft doctor` (add `--project` for a repository install), then open Codex in the product repository and invoke `$stylegraft`.
 
 ### ChatGPT
 
+The npm installer configures Codex; it cannot install a skill into the hosted ChatGPT interface. To use StyleGraft in ChatGPT:
+
 1. Download or clone this repository.
-2. Import `skills/stylegraft` through Skills if your workspace supports custom skill installation.
-3. Attach a full-page website screenshot and invoke `@stylegraft`:
+2. Open **Plugins → Skills** in ChatGPT Work and import the `skills/stylegraft` folder if custom skill installation is enabled for your workspace.
+3. Start a new chat, attach a full-page website screenshot and invoke `@stylegraft`:
 
 > @stylegraft Turn this reference into an original design system for Arcapush, a discovery platform for serious solo builders.
 
 ### Codex
 
-1. Clone the repository and install the included `skills/stylegraft` skill.
-2. Open the product repository so Codex can inspect its context.
-3. Attach the reference and invoke `$stylegraft`:
+1. In your terminal, run `npx @blindspotlab/stylegraft install` for your user account, or add `--project` to keep the skill inside the current repository.
+2. Open the product repository in Codex so it can inspect the real product context.
+3. Attach the full-page reference and invoke `$stylegraft`:
 
 > $stylegraft Inspect this repository, use the attached full-page reference, and create DESIGN.md before implementation.
 
-ChatGPT uses `@` mentions and Codex uses `$` mentions for explicitly selecting a skill. Installation and sharing controls may depend on workspace settings. StyleGraft will move to one-click installation after plugin-directory approval.
+ChatGPT uses `@` mentions and Codex uses `$` mentions for explicitly selecting a skill. ChatGPT installation and sharing controls depend on workspace settings. StyleGraft will move to one-click ChatGPT installation after directory approval.
+
+## The origin
+
+In early August 2026, I stepped away from X for the weekend and returned to learning about design systems. I had last studied them seriously around April or May, but this time something clicked: a design system is not merely colours, type sizes and reusable components. It is the reasoning beneath an interface—its rhythm, hierarchy, composition, imagery, constraints and character.
+
+The next day, I encountered Claude's design workflow and saw the gap clearly. Claude users had a way to carry visual intent into a build, but I could not find an equivalent made for ChatGPT and Codex: something that could accept a complete website reference, understand the product being built, and give an AI coding agent an original system it could follow without producing generic AI design.
+
+That was the blind spot. I built StyleGraft to fill it.
+
+The first product I tested it on was StyleGraft itself. The aim was never to copy another website or sample a handful of tokens. It was to understand why a reference worked, translate those principles through the context of a different product, and preserve taste when the coding agent took over.
+
+## About the founder
+
+[Mojeeb Titilayo](https://mojeeb.xyz/) is a Product Engineer and Strategist, and the founder of [BlindspotLab](https://blindspotlab.xyz/), an independent product studio focused on finding overlooked problems and turning them into useful, thoughtfully built products. He created StyleGraft after recognising that ChatGPT and Codex builders needed a practical bridge between visual inspiration and implementation-ready design direction.
+
+StyleGraft is a BlindspotLab product, founded and created by Mojeeb Titilayo.
 
 ## How to use it
 
@@ -91,7 +111,7 @@ For later releases, bump the version in `package.json` before running the workfl
 
 ## Status
 
-Early public build. The skill and output schema are being evaluated across diverse website references before plugin-directory submission.
+Available publicly on [npm](https://www.npmjs.com/package/@blindspotlab/stylegraft). The skill and output schema are being evaluated across diverse website references before ChatGPT directory submission.
 
 ## Credits
 
