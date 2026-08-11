@@ -32,6 +32,45 @@ const compactNumber = new Intl.NumberFormat("en", {
   maximumFractionDigits: 1,
 });
 
+const styleGraftLaunchDate = "2026-08-10";
+
+function dateString(date) {
+  return date.toISOString().slice(0, 10);
+}
+
+function npmDownloadRanges(startDate) {
+  const ranges = [];
+  const today = new Date();
+  today.setUTCHours(0, 0, 0, 0);
+  let cursor = new Date(`${startDate}T00:00:00Z`);
+
+  while (cursor <= today) {
+    const end = new Date(cursor);
+    end.setUTCFullYear(end.getUTCFullYear() + 1);
+    end.setUTCDate(end.getUTCDate() - 1);
+    if (end > today) end.setTime(today.getTime());
+
+    ranges.push(`${dateString(cursor)}:${dateString(end)}`);
+    cursor = new Date(end);
+    cursor.setUTCDate(cursor.getUTCDate() + 1);
+  }
+
+  return ranges;
+}
+
+async function totalNpmDownloads() {
+  const packageName = "%40blindspotlab%2Fstylegraft";
+  const totals = await Promise.all(
+    npmDownloadRanges(styleGraftLaunchDate).map((range) =>
+      fetch(`https://api.npmjs.org/downloads/point/${range}/${packageName}`, { cache: "no-store" })
+        .then((response) => response.ok ? response.json() : Promise.reject())
+        .then((data) => data.downloads)
+    )
+  );
+
+  return totals.reduce((sum, downloads) => sum + downloads, 0);
+}
+
 async function hydrateProjectStats() {
   const stars = document.querySelector("[data-github-stars]");
   const downloads = document.querySelector("[data-npm-downloads]");
@@ -43,9 +82,8 @@ async function hydrateProjectStats() {
     })
       .then((response) => response.ok ? response.json() : Promise.reject())
       .then((data) => { stars.textContent = compactNumber.format(data.stargazers_count); }),
-    fetch("https://api.npmjs.org/downloads/point/last-month/%40blindspotlab%2Fstylegraft", { cache: "no-store" })
-      .then((response) => response.ok ? response.json() : Promise.reject())
-      .then((data) => { downloads.textContent = compactNumber.format(data.downloads); }),
+    totalNpmDownloads()
+      .then((total) => { downloads.textContent = compactNumber.format(total); }),
   ];
 
   await Promise.allSettled(requests);
